@@ -8,8 +8,8 @@ import com.milkneko.mngefexamples.trollseditor.gef.model.ConveyorBeltSymbolEntry
 import com.milkneko.mngefexamples.trollseditor.gef.view.ConveyorBeltSymbolEntryFigure;
 
 public class ConveyorBeltSymbolEntryEditPart extends AbstractGraphicalEditPart {
-	private static int WIDTH = 25;
-	private static int HEIGHT = 25;
+	private static int WIDTH = 26;
+	private static int HEIGHT = 26;
 	
 	
 	@Override
@@ -19,6 +19,7 @@ public class ConveyorBeltSymbolEntryEditPart extends AbstractGraphicalEditPart {
 		ConveyorBeltSymbolEntryFigure figure = new ConveyorBeltSymbolEntryFigure();
 		figure.setLayout(new Rectangle(conveyorBeltSymbolEntry.getIndex()*WIDTH, 0, WIDTH, HEIGHT));
 		figure.setCharID(conveyorBeltSymbolEntry.getSymbol().getCharacterID());
+		figure.setIndex(conveyorBeltSymbolEntry.getSymbol().getIndex());
 		
 		return figure;
 	}

@@ -9,8 +9,8 @@ import com.milkneko.mngefexamples.trollseditor.gef.view.BoardSymbolEntryFigure;
 
 public class BoardSymbolEntryEditPart extends AbstractGraphicalEditPart {
 
-	private static int WIDTH = 25;
-	private static int HEIGHT = 25;
+	private static int WIDTH = 26;
+	private static int HEIGHT = 26;
 	
 	@Override
 	protected IFigure createFigure() {
@@ -20,6 +20,7 @@ public class BoardSymbolEntryEditPart extends AbstractGraphicalEditPart {
 		
 		figure.setLayout(new Rectangle(boardSymbolEntry.getColumn()*WIDTH, boardSymbolEntry.getRow()*HEIGHT, WIDTH, HEIGHT));
 		figure.setCharID(boardSymbolEntry.getSymbol().getCharacterID());
+		figure.setIndex(boardSymbolEntry.getSymbol().getIndex());
 		
 		return figure;
 	}

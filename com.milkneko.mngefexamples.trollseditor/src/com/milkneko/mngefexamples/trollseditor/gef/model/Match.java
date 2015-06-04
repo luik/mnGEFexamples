@@ -23,12 +23,14 @@ public class Match {
 			symbolsIDS[i] = (char)('0' + i);
 			Symbol symbol = new Symbol();
 			symbol.setCharacterID(symbolsIDS[i]);
+			symbol.setIndex(i);
 			symbols.add(i, symbol);
 		}
 		for(int j=0; j < 'Z' - 'A'; j++){
 			symbolsIDS[i + j] = (char)('A' + j);
 			Symbol symbol = new Symbol();
 			symbol.setCharacterID(symbolsIDS[i + j]);
+			symbol.setIndex(i + j);
 			symbols.add(i + j, symbol);
 		}
 	}
