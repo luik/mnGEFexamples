@@ -26,8 +26,7 @@ public class Match {
 			symbol.setIndex(i);
 			symbols.add(i, symbol);
 		}
-		i--;
-		for(int j=0; j < 'Z' - 'A'; j++){
+		for(int j=0; j < 'Z' - 'A' - 1; j++){
 			symbolsIDS[i + j] = (char)('A' + j);
 			Symbol symbol = new Symbol();
 			symbol.setCharacterID(symbolsIDS[i + j]);

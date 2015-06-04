@@ -14,7 +14,7 @@ public class BoardEditPart extends AbstractGraphicalEditPart {
 	@Override
 	protected IFigure createFigure() {
 		BoardFigure figure = new BoardFigure();
-		figure.setBounds(new Rectangle(0, 50, 500, 500));
+		figure.setBounds(new Rectangle(0, 75, 500, 500));
 		
 		return figure;
 	}

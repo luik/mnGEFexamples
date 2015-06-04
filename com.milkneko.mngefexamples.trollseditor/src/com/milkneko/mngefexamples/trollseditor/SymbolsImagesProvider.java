@@ -18,7 +18,7 @@ public class SymbolsImagesProvider {
 				symbolsImages = new Image[SYMBOLS];
 				
 				for(int i=0; i<SYMBOLS; i++){
-					URL url = new URL("platform:/plugin/com.milkneko.mngefexamples.trollseditor/symbols/" + (i + 1) + ".png" );
+					URL url = new URL("platform:/plugin/com.milkneko.mngefexamples.trollseditor/symbols/" + i + ".png");
 				    InputStream inputStream = url.openConnection().getInputStream();
 					symbolsImages[i] = new Image(null, inputStream);
 				}

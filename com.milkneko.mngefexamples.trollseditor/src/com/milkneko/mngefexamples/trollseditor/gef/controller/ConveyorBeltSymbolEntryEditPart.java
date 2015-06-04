@@ -17,7 +17,7 @@ public class ConveyorBeltSymbolEntryEditPart extends AbstractGraphicalEditPart {
 		ConveyorBeltSymbolEntry conveyorBeltSymbolEntry = (ConveyorBeltSymbolEntry) getModel();
 		
 		ConveyorBeltSymbolEntryFigure figure = new ConveyorBeltSymbolEntryFigure();
-		figure.setLayout(new Rectangle(conveyorBeltSymbolEntry.getIndex()*WIDTH, 0, WIDTH, HEIGHT));
+		figure.setLayout(new Rectangle(conveyorBeltSymbolEntry.getIndex()%10*WIDTH, conveyorBeltSymbolEntry.getIndex()/10*HEIGHT, WIDTH, HEIGHT));
 		figure.setCharID(conveyorBeltSymbolEntry.getSymbol().getCharacterID());
 		figure.setIndex(conveyorBeltSymbolEntry.getSymbol().getIndex());
 		
