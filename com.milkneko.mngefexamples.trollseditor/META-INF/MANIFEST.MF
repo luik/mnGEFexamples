@@ -1,11 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Trollseditor
-Bundle-SymbolicName: com.milkneko.mngefexamples.trollseditor
+Bundle-SymbolicName: com.milkneko.mngefexamples.trollseditor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.milkneko.mngefexamples.trollseditor.Activator
 Bundle-Vendor: MILKNEKO
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.gef
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
