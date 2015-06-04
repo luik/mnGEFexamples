@@ -19,13 +19,14 @@ public class Match {
 		symbolsIDS = new char['9' - '0' + 'Z' - 'A'];
 		
 		int i;
-		for(i=0; i < '9' - '0'; i++){
+		for(i=0; i <= '9' - '0'; i++){
 			symbolsIDS[i] = (char)('0' + i);
 			Symbol symbol = new Symbol();
 			symbol.setCharacterID(symbolsIDS[i]);
 			symbol.setIndex(i);
 			symbols.add(i, symbol);
 		}
+		i--;
 		for(int j=0; j < 'Z' - 'A'; j++){
 			symbolsIDS[i + j] = (char)('A' + j);
 			Symbol symbol = new Symbol();
@@ -45,5 +46,14 @@ public class Match {
 	
 	public Symbol getSymbolWithIndex(int index){
 		return symbols.get(index);
+	}
+	
+	public Symbol getSymbolWithChar(char charID){
+		for (Symbol symbol : symbols) {
+			if(symbol.getCharacterID() == charID){
+				return symbol;
+			}
+		}
+		return null;
 	}
 }

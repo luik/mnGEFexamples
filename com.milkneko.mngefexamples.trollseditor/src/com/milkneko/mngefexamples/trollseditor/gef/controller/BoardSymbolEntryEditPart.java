@@ -19,6 +19,7 @@ public class BoardSymbolEntryEditPart extends AbstractGraphicalEditPart {
 		BoardSymbolEntryFigure figure = new BoardSymbolEntryFigure();
 		
 		figure.setLayout(new Rectangle(boardSymbolEntry.getColumn()*WIDTH, boardSymbolEntry.getRow()*HEIGHT, WIDTH, HEIGHT));
+		
 		figure.setCharID(boardSymbolEntry.getSymbol().getCharacterID());
 		figure.setIndex(boardSymbolEntry.getSymbol().getIndex());
 		
